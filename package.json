@@ -1,12 +1,15 @@
 {
-  "name": "use-click-outside",
+  "name": "@goo_co/use-on-click-outside",
   "version": "1.0.0",
-  "description": "React hook for listening for clicks outside of an element.",
-  "main": "index.js",
+  "description": "React hook for listening for clicks outside an element.",
+  "main": "dist/index.js",
+  "types": "dist/useOnClickOutside.d.ts",
+  "files": ["dist"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc -w",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "npm run build && npm publish --access=public"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,10 @@
     "@types/react": "^18.0.15",
     "react": "^18.2.0",
     "typescript": "^4.7.4"
-  }
+  },
+  "keywords": [
+    "click away",
+    "click outside",
+    "react"
+  ]
 }
